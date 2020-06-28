@@ -43,11 +43,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         submitButton.setOnClickListener {
-            if (index == questions?.size?.minus(1)) {
-                val intent = Intent(this, SummaryReport::class.java)
-                startActivity(intent)
-            }
-
             submitted = !submitted
 
             if (submitted) {
@@ -67,6 +62,9 @@ class MainActivity : AppCompatActivity() {
                     submitButton.setText("Submit Answer")
                     setButtonColors()
                     setQuestionAndOptions()
+                } else {
+                    val intent = Intent(this, SummaryReport::class.java)
+                    startActivity(intent)
                 }
             }
         }
