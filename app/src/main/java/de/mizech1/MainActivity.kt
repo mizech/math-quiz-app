@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         questions = Questions().list
         initQuestion()
+        progressBar.max = questions?.size ?: 0
 
         buttons?.add(findViewById<Button>(R.id.optionButton1))
         buttons?.add(findViewById<Button>(R.id.optionButton2))
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity() {
             if (submitted) {
                 submitButton.setText("Continue")
                 setButtonColors()
+                progressBar.progress = index + 1
 
                 if (selected == indexCurrentCorrect) {
                     countCorrectAnswers++
