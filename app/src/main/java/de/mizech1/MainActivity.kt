@@ -2,16 +2,11 @@ package de.mizech1
 
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     var selected: Int? = null
@@ -47,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         submitButton.setOnClickListener {
-            if (index == questions?.size) {
+            if (index == questions?.size?.minus(1)) {
                 val intent = Intent(this, SummaryReport::class.java)
                 startActivity(intent)
             }
@@ -55,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             submitted = !submitted
 
             if (submitted) {
-                submitButton.setText("Next Question")
+                submitButton.setText("Continue")
                 setButtonColors()
 
                 if (selected == indexCurrentCorrect) {
@@ -70,8 +65,6 @@ class MainActivity : AppCompatActivity() {
                     submitButton.setText("Submit Answer")
                     setButtonColors()
                     setQuestionAndOptions()
-                } else {
-                    submitButton.setText("Finish Quiz")
                 }
             }
         }
@@ -111,5 +104,4 @@ class MainActivity : AppCompatActivity() {
         button.setBackgroundColor(backgroundColor)
         button.setTextColor(textColor)
     }
-
 }
