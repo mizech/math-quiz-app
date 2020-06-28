@@ -1,6 +1,8 @@
 package de.mizech1
 
+import android.content.Intent
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -45,16 +47,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         submitButton.setOnClickListener {
+            if (index == questions?.size) {
+                val intent = Intent(this, SummaryReport::class.java)
+                startActivity(intent)
+            }
+
             submitted = !submitted
 
             if (submitted) {
                 submitButton.setText("Next Question")
                 setButtonColors()
 
-                var correctAnswer = currentQuestion?.correctAnswer
-
-                if (textSelected == correctAnswer) {
+                if (selected == indexCurrentCorrect) {
                     countCorrectAnswers++
+                    Toast.makeText(this, countCorrectAnswers.toString(), Toast.LENGTH_SHORT).show()
                 }
             } else {
                 index++
@@ -65,9 +71,7 @@ class MainActivity : AppCompatActivity() {
                     setButtonColors()
                     setQuestionAndOptions()
                 } else {
-                    Toast.makeText(this, "Game Over! $countCorrectAnswers",
-                            Toast.LENGTH_SHORT).show()
-                    submitButton.visibility = View.GONE
+                    submitButton.setText("Finish Quiz")
                 }
             }
         }
