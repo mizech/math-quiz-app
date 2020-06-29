@@ -23,21 +23,33 @@
         android:id="@+id/scoreReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/congratulations" />
+        app:layout_constraintTop_toBottomOf="@+id/smileyImage" />
 
     <Button
         android:id="@+id/restartGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
         android:text="Restart Game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scoreReport" />
+
+    <ImageView
+        android:id="@+id/smileyImage"
+        android:layout_width="154dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratulations"
+        app:srcCompat="@drawable/baseline_emoji_events_black_48" />
 </androidx.constraintlayout.widget.ConstraintLayout>

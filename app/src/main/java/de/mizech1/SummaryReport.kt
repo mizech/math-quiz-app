@@ -19,15 +19,19 @@ class SummaryReport : AppCompatActivity() {
         when (score) {
             10 -> {
                 message = messages[0]
+                smileyImage.setImageResource(R.drawable.baseline_emoji_events_black_48)
             }
             in 8..9 -> {
                 message = messages[1]
+                smileyImage.setImageResource(R.drawable.baseline_mood_black_48)
             }
             in 6..7 -> {
                 message = messages[2]
+                smileyImage.setImageResource(R.drawable.baseline_sentiment_satisfied_black_48)
             }
             else -> {
                 message = messages[3]
+                smileyImage.setImageResource(R.drawable.baseline_sentiment_dissatisfied_black_48)
             }
         }
 
