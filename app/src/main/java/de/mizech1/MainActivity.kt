@@ -65,6 +65,8 @@ class MainActivity : AppCompatActivity() {
                         setQuestionAndOptions()
                     } else {
                         val intent = Intent(this, SummaryReport::class.java)
+                        intent.putExtra("score", countCorrectAnswers)
+                        intent.putExtra("total", questions?.size!!)
                         startActivity(intent)
                     }
                 }
@@ -72,6 +74,23 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please select one option.", Toast.LENGTH_SHORT)
                     .show()
             }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if (index > 0) {
+            selected = null
+            hasSubmitted = false
+            textSelected = ""
+            index = 0
+            countCorrectAnswers = 0
+            progressBar.progress = 0
+
+            setButtonColors()
+            initQuestion()
+            setQuestionAndOptions()
         }
     }
 
