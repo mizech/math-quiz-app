@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     var selected: Int? = null
-    var submitted: Boolean = false
+    var hasSubmitted: Boolean = false
     var textSelected: String = ""
     var index = 0
     var questions: ArrayList<Question>? = null
@@ -43,29 +43,34 @@ class MainActivity : AppCompatActivity() {
         }
 
         submitButton.setOnClickListener {
-            submitted = !submitted
+            if (selected != null) {
+                hasSubmitted = !hasSubmitted
 
-            if (submitted) {
-                submitButton.setText("Continue")
-                setButtonColors()
-                progressBar.progress = index + 1
+                if (hasSubmitted) {
+                    submitButton.setText("Continue")
+                    setButtonColors()
+                    progressBar.progress = index + 1
 
-                if (selected == indexCurrentCorrect) {
-                    countCorrectAnswers++
-                    Toast.makeText(this, countCorrectAnswers.toString(), Toast.LENGTH_SHORT).show()
+                    if (selected == indexCurrentCorrect) {
+                        countCorrectAnswers++
+                        Toast.makeText(this, countCorrectAnswers.toString(), Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    index++
+
+                    if (index < questions?.size!!) {
+                        initQuestion()
+                        submitButton.setText("Submit Answer")
+                        setButtonColors()
+                        setQuestionAndOptions()
+                    } else {
+                        val intent = Intent(this, SummaryReport::class.java)
+                        startActivity(intent)
+                    }
                 }
             } else {
-                index++
-
-                if (index < questions?.size!!) {
-                    initQuestion()
-                    submitButton.setText("Submit Answer")
-                    setButtonColors()
-                    setQuestionAndOptions()
-                } else {
-                    val intent = Intent(this, SummaryReport::class.java)
-                    startActivity(intent)
-                }
+                Toast.makeText(this, "Please select one option.", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }
@@ -74,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         currentQuestion = questions?.get(index)
         indexCurrentCorrect = currentQuestion?.correctOption
         selected = null
-        submitted = false
+        hasSubmitted = false
     }
 
     fun setQuestionAndOptions() {
@@ -94,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 textSelected = button.text.toString()
             }
 
-            if (submitted && index == indexCurrentCorrect) {
+            if (hasSubmitted && index == indexCurrentCorrect) {
                 setButtonColor(button, Color.GREEN, Color.WHITE)
             }
         }

@@ -11,10 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3a79cc7-debb-4167-98bb-1e3873942b25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DrawingApp/app/src/main/java/com/example/drawingapp/DrawingView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593322580104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed issue with navigation to the report-activity.">
+      <created>1593324790965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593324790965</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +214,7 @@
     <MESSAGE value="Added summary-report activity." />
     <MESSAGE value="Modified the text of the submit-button." />
     <MESSAGE value="Added the progress-bar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the progress-bar." />
+    <MESSAGE value="Fixed issue with navigation to the report-activity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with navigation to the report-activity." />
   </component>
 </project>
