@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
 
                 if (hasSubmitted) {
                     submitButton.setText("Continue")
+                    toggleButtonsEnabled(false)
                     setButtonColors()
                     progressBar.progress = index + 1
 
@@ -61,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                     if (index < questions?.size!!) {
                         initQuestion()
                         submitButton.setText("Submit Answer")
+                        toggleButtonsEnabled(true)
                         setButtonColors()
                         setQuestionAndOptions()
                     } else {
@@ -74,6 +76,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please select one option.", Toast.LENGTH_SHORT)
                     .show()
             }
+        }
+    }
+
+    fun toggleButtonsEnabled(newState: Boolean = false) {
+        buttons.forEach { button ->
+            button.isEnabled = newState
         }
     }
 
