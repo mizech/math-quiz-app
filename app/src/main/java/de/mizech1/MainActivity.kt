@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
 
                 if (hasSubmitted) {
                     submitButton.setText("Continue")
+                    submitButton.setTextColor(Color.RED)
                     toggleButtonsEnabled(false)
                     setButtonColors()
                     progressBar.progress = index + 1
@@ -62,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                     if (index < questions?.size!!) {
                         initQuestion()
                         submitButton.setText("Submit Answer")
+                        submitButton.setTextColor(Color.BLUE)
                         toggleButtonsEnabled(true)
                         setButtonColors()
                         setQuestionAndOptions()
