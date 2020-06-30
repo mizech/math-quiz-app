@@ -5,11 +5,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_summary_report.*
 
 class SummaryReport : AppCompatActivity() {
-//    val messages = listOf(getString(R.string.first_rank), getString(R.string.second_rank),
-//        getString(R.string.third_rank), getString(R.string.fourth_rank))
-    val messages = listOf("Congratulations. Excellent done.", "Great done. Congratulations",
-        "Nicely done.", "Better luck next time.")
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_summary_report)
@@ -20,19 +15,19 @@ class SummaryReport : AppCompatActivity() {
 
         when (score) {
             10 -> {
-                message = messages[0]
+                message = getString(R.string.first_rank)
                 smileyImage.setImageResource(R.drawable.baseline_emoji_events_black_48)
             }
             in 8..9 -> {
-                message = messages[1]
+                message = getString(R.string.second_rank)
                 smileyImage.setImageResource(R.drawable.baseline_mood_black_48)
             }
             in 6..7 -> {
-                message = messages[2]
+                message = getString(R.string.third_rank)
                 smileyImage.setImageResource(R.drawable.baseline_sentiment_satisfied_black_48)
             }
             else -> {
-                message = messages[3]
+                message = getString(R.string.fourth_rank)
                 smileyImage.setImageResource(R.drawable.baseline_sentiment_dissatisfied_black_48)
             }
         }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mathe Quiz</string>
+    <string name="submit_answer">Antwort einreichen</string>
+    <string name="cont">Fortsetzen</string>
+    <string name="score">Punktestand</string>
+    <string name="select_option">Bitte eine Option auswählen.</string>
+    <string name="congrats">Gratulation!</string>
+    <string name="restart_game">Neues Spiel starten</string>
+    <string name="first_rank">Glückwunsch. Ausgezeichnet gemacht.</string>
+    <string name="second_rank">Gut gemacht. Gratulation!</string>
+    <string name="third_rank">Prima gemacht.</string>
+    <string name="fourth_rank">Das nächste Mal klappt es besser.</string>
+    <string name="first_part_summary">Du hast</string>
+    <string name="middle_part_summary">von</string>
+    <string name="last_part_summary">Fragen richtig.</string>
+    <string name="reset_game">Spiel rücksetzen</string>
+    <string name="reset_title">Rücksetzen</string>
+    <string name="reset_message">Der aktuelle Spielstand wird verworfen. Aktion durchführen?</string>
+    <string name="operation_cancelled">Aktion abgebrochen.</string>
+    <string name="reset_exec">Aktion durchgeführt.</string>
+</resources>
