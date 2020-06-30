@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -81,6 +82,25 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         }
+
+        resetButton.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle(getString(R.string.reset_title))
+            builder.setMessage(getString(R.string.reset_message))
+
+            builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+                Toast.makeText(this, getString(R.string.reset_exec),
+                    Toast.LENGTH_SHORT).show()
+                resetState()
+            }
+
+            builder.setNegativeButton(android.R.string.no) { dialog, which ->
+                Toast.makeText(this, getString(R.string.operation_cancelled),
+                    Toast.LENGTH_SHORT).show()
+            }
+
+            builder.show()
+        }
     }
 
     fun reportText() {
@@ -98,17 +118,23 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         if (index > 0) {
-            selected = null
-            hasSubmitted = false
-            textSelected = ""
-            index = 0
-            countCorrectAnswers = 0
-            progressBar.progress = 0
-
-            setButtonColors()
-            initQuestion()
-            setQuestionAndOptions()
+            resetState()
         }
+    }
+
+    fun resetState() {
+        selected = null
+        hasSubmitted = false
+        textSelected = ""
+        index = 0
+        countCorrectAnswers = 0
+        progressBar.progress = 0
+
+        setButtonColors()
+        initQuestion()
+        setQuestionAndOptions()
+        toggleButtonsEnabled(true)
+        reportText()
     }
 
     fun initQuestion() {

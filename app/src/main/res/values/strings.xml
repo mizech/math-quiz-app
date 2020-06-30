@@ -13,4 +13,9 @@
     <string name="first_part_summary">You got</string>
     <string name="middle_part_summary">out of</string>
     <string name="last_part_summary">questions correct.</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="reset_title">Reset Game</string>
+    <string name="reset_message">Current state will be discarded. Do you want to continue?</string>
+    <string name="operation_cancelled">Operation cancelled.</string>
+    <string name="reset_exec">Reset executed.</string>
 </resources>
