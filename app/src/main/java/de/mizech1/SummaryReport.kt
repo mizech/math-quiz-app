@@ -5,6 +5,8 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_summary_report.*
 
 class SummaryReport : AppCompatActivity() {
+//    val messages = listOf(getString(R.string.first_rank), getString(R.string.second_rank),
+//        getString(R.string.third_rank), getString(R.string.fourth_rank))
     val messages = listOf("Congratulations. Excellent done.", "Great done. Congratulations",
         "Nicely done.", "Better luck next time.")
 
@@ -37,7 +39,9 @@ class SummaryReport : AppCompatActivity() {
 
         congratulations.text = message
         scoreReport.setText(
-            "You got ${score.toString()} out of ${total.toString()} questions correct.")
+            "${getString(R.string.first_part_summary)} ${score.toString()} " +
+                    "${getString(R.string.middle_part_summary)} ${total.toString()} " +
+                    "${getString(R.string.last_part_summary)}.")
 
         restartGame.setOnClickListener {
             finish()

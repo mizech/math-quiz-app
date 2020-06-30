@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 hasSubmitted = !hasSubmitted
 
                 if (hasSubmitted) {
-                    submitButton.setText("Continue")
+                    submitButton.text = getString(R.string.cont)
                     submitButton.setTextColor(Color.BLUE)
                     toggleButtonsEnabled(false)
                     setButtonColors()
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
                     if (index < questions?.size!!) {
                         initQuestion()
-                        submitButton.setText("Submit Answer")
+                        submitButton.text = getString(R.string.submit_answer)
                         submitButton.setTextColor(Color.RED)
                         toggleButtonsEnabled(true)
                         setButtonColors()
@@ -77,14 +77,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Please select one option.", Toast.LENGTH_SHORT)
+                Toast.makeText(this, R.string.select_option, Toast.LENGTH_SHORT)
                     .show()
             }
         }
     }
 
     fun reportText() {
-        currentScore.setText("Score: $countCorrectAnswers")
+        currentScore.text = "${getString(R.string.score)}: $countCorrectAnswers"
         reportText.setText("${index + 1} / ${questions?.size.toString()}")
     }
 
