@@ -53,13 +53,12 @@ class MainActivity : AppCompatActivity() {
                     toggleButtonsEnabled(false)
                     setButtonColors()
                     progressBar.progress = index + 1
-                    reportText()
 
                     if (selected == indexCurrentCorrect) {
                         countCorrectAnswers++
-                        Toast.makeText(this, countCorrectAnswers.toString(),
-                            Toast.LENGTH_SHORT).show()
                     }
+
+                    reportText()
                 } else {
                     index++
 
@@ -85,6 +84,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun reportText() {
+        currentScore.setText("Score: $countCorrectAnswers")
         reportText.setText("${index + 1} / ${questions?.size.toString()}")
     }
 

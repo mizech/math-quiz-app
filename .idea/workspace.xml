@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593496438683</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added &quot;Report current count&quot;.">
+      <created>1593497209259</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593497209259</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +256,7 @@
     <MESSAGE value="Added the restart-game button." />
     <MESSAGE value="Programmed the image-view when." />
     <MESSAGE value="Added colors to the submit-button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added colors to the submit-button." />
+    <MESSAGE value="Added &quot;Report current count&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Report current count&quot;." />
   </component>
 </project>
