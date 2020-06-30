@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         questions = Questions().list
         initQuestion()
+        reportText()
         progressBar.max = questions?.size ?: 0
 
         buttons?.add(findViewById<Button>(R.id.optionButton1))
@@ -48,14 +49,16 @@ class MainActivity : AppCompatActivity() {
 
                 if (hasSubmitted) {
                     submitButton.setText("Continue")
-                    submitButton.setTextColor(Color.RED)
+                    submitButton.setTextColor(Color.BLUE)
                     toggleButtonsEnabled(false)
                     setButtonColors()
                     progressBar.progress = index + 1
+                    reportText()
 
                     if (selected == indexCurrentCorrect) {
                         countCorrectAnswers++
-                        Toast.makeText(this, countCorrectAnswers.toString(), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, countCorrectAnswers.toString(),
+                            Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     index++
@@ -63,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                     if (index < questions?.size!!) {
                         initQuestion()
                         submitButton.setText("Submit Answer")
-                        submitButton.setTextColor(Color.BLUE)
+                        submitButton.setTextColor(Color.RED)
                         toggleButtonsEnabled(true)
                         setButtonColors()
                         setQuestionAndOptions()
@@ -79,6 +82,10 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         }
+    }
+
+    fun reportText() {
+        reportText.setText("${index + 1} / ${questions?.size.toString()}")
     }
 
     fun toggleButtonsEnabled(newState: Boolean = false) {
