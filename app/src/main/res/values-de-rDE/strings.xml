@@ -13,7 +13,7 @@
     <string name="fourth_rank">Das nächste Mal klappt es besser.</string>
     <string name="first_part_summary">Du hast</string>
     <string name="middle_part_summary">von</string>
-    <string name="last_part_summary">Fragen richtig.</string>
+    <string name="last_part_summary">Fragen richtig</string>
     <string name="reset_game">Spiel rücksetzen</string>
     <string name="reset_title">Rücksetzen</string>
     <string name="reset_message">Der aktuelle Spielstand wird verworfen. Aktion durchführen?</string>
