@@ -253,10 +253,28 @@ class QuestionFactory() {
             )
         }
 
-        fun createRandomQuestion(): Question {
+        fun setQuestion(text: String, result: Int): Question {
+            var question = Question()
+            var factors
+                    = mutableListOf<Int>(result + 1, result + 2, result - 1, result - 2)
+            factors.shuffle()
+            val randomIndex = (0..3).random()
+            factors.set(randomIndex, result)
+
+            question.text = text
+            question.option1 = (factors[0]).toString()
+            question.option2 = (factors[1]).toString()
+            question.option3 = (factors[2]).toString()
+            question.option4 = (factors[3]).toString()
+            question.correctOption = randomIndex
+
+            return question
+        }
+
+        fun createRandomQuestion(): Question? {
             val calcType = listOf<String>("add", "subtract", "multiply", "divide")
             val random = (calcType.indices).random()
-            var question = Question()
+            var question: Question? = null
 
             when (calcType.get(random)) {
                 "add" -> {
@@ -264,54 +282,21 @@ class QuestionFactory() {
                     val b = (0..99).random()
                     val sum = a + b
 
-                    var factors
-                            = mutableListOf<Int>(sum + 1, sum + 2, sum - 1, sum - 2)
-                    factors.shuffle()
-                    val randomIndex = (0..3).random()
-                    factors.set(randomIndex, sum)
-
-                    question.text = "$a + $b"
-                    question.option1 = (factors[0]).toString()
-                    question.option2 = (factors[1]).toString()
-                    question.option3 = (factors[2]).toString()
-                    question.option4 = (factors[3]).toString()
-                    question.correctOption = randomIndex
+                    question = setQuestion("$a + $b", sum)
                 }
                 "subtract" -> {
                     val a = (0..99).random()
                     val b = (0..99).random()
                     val difference = a - b
 
-                    var factors
-                            = mutableListOf<Int>(difference - 1, difference - 2, difference + 1, difference + 2)
-                    factors.shuffle()
-                    val randomIndex = (0..3).random()
-                    factors.set(randomIndex, difference)
-
-                    question.text = "$a - $b"
-                    question.option1 = (factors[0]).toString()
-                    question.option2 = (factors[1]).toString()
-                    question.option3 = (factors[2]).toString()
-                    question.option4 = (factors[3]).toString()
-                    question.correctOption = randomIndex
+                    question = setQuestion("$a - $b", difference)
                 }
                 "multiply" -> {
                     val a = (1..10).random()
                     val b = (1..10).random()
                     val product = a * b
 
-                    var factors
-                            = mutableListOf<Int>(product + 1, product + 2, product - 1, product - 2)
-                    factors.shuffle()
-                    val randomIndex = (0..3).random()
-                    factors.set(randomIndex, product)
-
-                    question.text = "$a * $b"
-                    question.option1 = (factors[0]).toString()
-                    question.option2 = (factors[1]).toString()
-                    question.option3 = (factors[2]).toString()
-                    question.option4 = (factors[3]).toString()
-                    question.correctOption = randomIndex
+                    question = setQuestion("$a * $b", product)
                 }
                 "divide" -> {
                     var a = (0..99).random()
@@ -322,26 +307,15 @@ class QuestionFactory() {
                     }
                     val quotient = a / b
 
-                    var factors
-                            = mutableListOf<Int>(quotient + 1, quotient + 2, quotient - 1, quotient - 2)
-                    factors.shuffle()
-                    val randomIndex = (0..3).random()
-                    factors.set(randomIndex, quotient)
-
-                    question.text = "$a / $b"
-                    question.option1 = (factors[0]).toString()
-                    question.option2 = (factors[1]).toString()
-                    question.option3 = (factors[2]).toString()
-                    question.option4 = (factors[3]).toString()
-                    question.correctOption = randomIndex
+                    question = setQuestion("$a / $b", quotient)
                 }
             }
 
             return question
         }
 
-        fun create(chargeSize: Int = 10): ArrayList<Question> {
-            var randomList = ArrayList<Question>()
+        fun create(chargeSize: Int = 10): ArrayList<Question?> {
+            var randomList = ArrayList<Question?>()
             var i = 0
             while (i < chargeSize) {
                 randomList.add(createRandomQuestion())

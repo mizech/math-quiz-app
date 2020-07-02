@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     var hasSubmitted: Boolean = false
     var textSelected: String = ""
     var index = 0
-    var questions: ArrayList<Question>? = null
+    var questions: ArrayList<Question?>? = null
     var currentQuestion: Question? = null
     var indexCurrentCorrect: Int? = null
     var buttons = ArrayList<Button>()
