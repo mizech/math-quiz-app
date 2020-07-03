@@ -4,17 +4,17 @@ class QuestionFactory() {
     companion object {
         fun setQuestionAttributes(text: String, result: Int): Question {
             var question = Question()
-            var factors
+            var values
                     = mutableListOf<Int>(result + 1, result + 2, result - 1, result - 2)
-            factors.shuffle()
+            values.shuffle()
             val randomIndex = (0..3).random()
-            factors.set(randomIndex, result)
+            values.set(randomIndex, result)
 
             question.text = text
-            question.option1 = (factors[0]).toString()
-            question.option2 = (factors[1]).toString()
-            question.option3 = (factors[2]).toString()
-            question.option4 = (factors[3]).toString()
+            question.option1 = (values[0]).toString()
+            question.option2 = (values[1]).toString()
+            question.option3 = (values[2]).toString()
+            question.option4 = (values[3]).toString()
             question.correctOption = randomIndex
 
             return question
