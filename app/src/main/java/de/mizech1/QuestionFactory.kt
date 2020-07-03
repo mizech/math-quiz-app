@@ -1,7 +1,5 @@
 package de.mizech1
 
-import android.util.Log
-
 class QuestionFactory() {
     companion object {
         fun setQuestionAttributes(text: String, result: Int): Question {
