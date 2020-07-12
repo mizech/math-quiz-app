@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     var indexCurrentCorrect: Int? = null
     var buttons = ArrayList<Button>()
     var countCorrectAnswers = 0
+    var startTime: Long? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         initQuestion()
         reportText()
         progressBar.max = questions?.size ?: 0
+        startTime = System.currentTimeMillis()
 
         buttons?.add(findViewById<Button>(R.id.optionButton1))
         buttons?.add(findViewById<Button>(R.id.optionButton2))
@@ -73,6 +75,8 @@ class MainActivity : AppCompatActivity() {
                         setQuestionAndOptions()
                     } else {
                         val intent = Intent(this, SummaryReport::class.java)
+                        intent.putExtra("timeNeeded",
+                            System.currentTimeMillis() - startTime!!)
                         intent.putExtra("score", countCorrectAnswers)
                         intent.putExtra("total", questions?.size!!)
                         startActivity(intent)

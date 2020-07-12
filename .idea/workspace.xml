@@ -11,37 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3a79cc7-debb-4167-98bb-1e3873942b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AndroidVideos/app/src/main/res/drawable/custom_border.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AndroidVideos/app/src/main/res/layout/player.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Playground/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Playground/app/src/main/res/drawable/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/de/mizech1/SummaryReport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/SummaryReport.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_summary_report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_summary_report.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/KotlinPlayground/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/KotlinPlayground/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/KotlinPlayground/src/main/java/com/example/kotlinplayground/MainClass.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/KotlinPlayground/src/main/java/com/example/kotlinplayground/Start.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/java/com/example/playground/FirstActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/java/com/example/playground/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/src/main/java/com/example/playground/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/java/com/example/playground/SecondActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/layout/activity_first.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/layout/activity_second.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/layout/my_dialog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Playground/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Playground/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleGame/app/src/main/java/com/example/simplegame/GameView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleGame/app/src/main/java/com/example/simplegame/SecondActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleGame/app/src/main/res/layout/activity_second.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StartActivityWithResult/app/src/main/java/com/example/startactivitywithresult/SecActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StartActivityWithResult/app/src/main/res/layout/activity_sec.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -335,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593758381762</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Removed the Icon-ImageView.">
+      <created>1594548022175</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1594548022175</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,17 +356,7 @@
     <MESSAGE value="Created a launcher-icon." />
     <MESSAGE value="Removed an unused import." />
     <MESSAGE value="Variable renaming." />
-    <option name="LAST_COMMIT_MESSAGE" value="Variable renaming." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt</url>
-          <line>132</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Removed the Icon-ImageView." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the Icon-ImageView." />
   </component>
 </project>

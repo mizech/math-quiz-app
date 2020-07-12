@@ -11,6 +11,7 @@ class SummaryReport : AppCompatActivity() {
 
         val score = intent.getIntExtra("score", 0)
         val total = intent.getIntExtra("total", 0)
+        val longTimeNeeded = intent.getLongExtra("timeNeeded", 0)
         var message = ""
 
         when (score) {
@@ -28,7 +29,7 @@ class SummaryReport : AppCompatActivity() {
             }
         }
 
-        timeNeeded.setText("Time needed: 2 minutes and 39 seconds.")
+        timeNeeded.setText("Time needed: $longTimeNeeded")
 
         congratulations.text = message
         scoreReport.setText(
