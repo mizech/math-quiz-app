@@ -16,21 +16,19 @@ class SummaryReport : AppCompatActivity() {
         when (score) {
             10 -> {
                 message = getString(R.string.first_rank)
-                smileyImage.setImageResource(R.drawable.baseline_emoji_events_black_48)
             }
             in 8..9 -> {
                 message = getString(R.string.second_rank)
-                smileyImage.setImageResource(R.drawable.baseline_mood_black_48)
             }
             in 6..7 -> {
                 message = getString(R.string.third_rank)
-                smileyImage.setImageResource(R.drawable.baseline_sentiment_satisfied_black_48)
             }
             else -> {
                 message = getString(R.string.fourth_rank)
-                smileyImage.setImageResource(R.drawable.baseline_sentiment_dissatisfied_black_48)
             }
         }
+
+        timeNeeded.setText("Time needed: 2 minutes and 39 seconds.")
 
         congratulations.text = message
         scoreReport.setText(
