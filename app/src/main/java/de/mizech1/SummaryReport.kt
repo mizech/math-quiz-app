@@ -3,6 +3,7 @@ package de.mizech1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_summary_report.*
+import kotlin.math.round
 
 class SummaryReport : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +33,12 @@ class SummaryReport : AppCompatActivity() {
         timeNeeded.setText(createTimeNeeded(longTimeNeeded))
 
         congratulations.text = message
+
+        val percent = (score * 100) / total
+        var rounded = (round(percent * 10.0)) / 10.0
+
         scoreReport.setText(
-            "${getString(R.string.first_part_summary)} ${score.toString()} " +
+            "${getString(R.string.first_part_summary)} ${score.toString()} (${rounded}%) " +
                     "${getString(R.string.middle_part_summary)} ${total.toString()} " +
                     "${getString(R.string.last_part_summary)}.")
 
