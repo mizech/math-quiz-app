@@ -18,4 +18,8 @@
     <string name="reset_message">Current state will be discarded. Do you want to continue?</string>
     <string name="operation_cancelled">Operation cancelled.</string>
     <string name="reset_exec">Reset executed.</string>
+    <string name="time_needed">Time needed: </string>
+    <string name="init_activity_title">Math Quiz</string>
+    <string name="how_many_questions">How many questions?</string>
+    <string name="start_quiz">Start Quiz</string>
 </resources>

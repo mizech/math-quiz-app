@@ -19,4 +19,8 @@
     <string name="reset_message">Der aktuelle Spielstand wird verworfen. Aktion durchführen?</string>
     <string name="operation_cancelled">Aktion abgebrochen.</string>
     <string name="reset_exec">Aktion durchgeführt.</string>
+    <string name="time_needed">Benötigte Zeit: </string>
+    <string name="init_activity_title">Mathe Quiz</string>
+    <string name="how_many_questions">Wie viele Fragen?</string>
+    <string name="start_quiz">Starte Quiz</string>
 </resources>

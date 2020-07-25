@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Spannable
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -135,6 +134,7 @@ class MainActivity : AppCompatActivity() {
         countCorrectAnswers = 0
         progressBar.progress = 0
         questions = QuestionFactory.create()
+        startTime = System.currentTimeMillis()
 
         setButtonColors()
         initQuestion()

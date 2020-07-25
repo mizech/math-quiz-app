@@ -11,12 +11,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3a79cc7-debb-4167-98bb-1e3873942b25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AndroidSpinner/app/src/main/java/com/example/androidspinner/SecondActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidSpinner/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/Init.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_init.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewBinding/app/src/main/java/com/example/viewbinding/showUserInput.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ViewBinding/app/src/main/res/layout/activity_show_user_input.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidVideos/app/src/main/res/drawable/custom_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidVideos/app/src/main/res/layout/player.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/java/com/example/drawingapp/DrawingView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/res/drawable/ic_brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/res/drawable/large.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/res/drawable/medium.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/res/drawable/small.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawingApp/app/src/main/res/layout/dialog_brush_size.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/de/mizech1/SummaryReport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/mizech1/SummaryReport.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_summary_report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_summary_report.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-de-rDE/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-de-rDE/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +76,8 @@
     <option name="EXPORT_PRIVATE_KEY" value="false" />
     <option name="KEY_STORE_PATH" value="$USER_HOME$/Desktop/MathQuiz/MathQuizKey" />
     <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,11 +85,13 @@
   <component name="ProjectId" id="1dtbqS3T9toOr0myJsmLADLN0Ne" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
     <property name="BundleExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="52036ca351d814b5" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-01T08:50:28.380Z" />
-    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.ApkPath" value="$USER_HOME$/Downloads" />
     <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
@@ -317,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594548022175</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added Intent-Extra &quot;TimeNeeded&quot;.">
+      <created>1594549446908</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1594549446908</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +395,7 @@
     <MESSAGE value="Removed an unused import." />
     <MESSAGE value="Variable renaming." />
     <MESSAGE value="Removed the Icon-ImageView." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed the Icon-ImageView." />
+    <MESSAGE value="Added Intent-Extra &quot;TimeNeeded&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Intent-Extra &quot;TimeNeeded&quot;." />
   </component>
 </project>

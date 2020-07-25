@@ -29,7 +29,7 @@ class SummaryReport : AppCompatActivity() {
             }
         }
 
-        timeNeeded.setText("Time needed: $longTimeNeeded")
+        timeNeeded.setText(createTimeNeeded(longTimeNeeded))
 
         congratulations.text = message
         scoreReport.setText(
@@ -40,5 +40,13 @@ class SummaryReport : AppCompatActivity() {
         restartGame.setOnClickListener {
             finish()
         }
+    }
+
+    fun createTimeNeeded(time: Long): String {
+        val totalSeconds = time / 1000
+        val minutes = totalSeconds / 60
+        val seconds = totalSeconds % 60
+
+        return "${resources.getString(R.string.time_needed)} $minutes:$seconds"
     }
 }
