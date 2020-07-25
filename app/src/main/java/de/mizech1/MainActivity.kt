@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        questions = QuestionFactory.create()
+        val selectedCount = intent.getIntExtra("selectedCount", 10)
+        questions = QuestionFactory.create(selectedCount)
         initQuestion()
         reportText()
         progressBar.max = questions?.size ?: 0
@@ -127,20 +128,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun resetState() {
-        selected = null
-        hasSubmitted = false
-        textSelected = ""
-        index = 0
-        countCorrectAnswers = 0
-        progressBar.progress = 0
-        questions = QuestionFactory.create()
-        startTime = System.currentTimeMillis()
-
-        setButtonColors()
-        initQuestion()
-        setQuestionAndOptions()
-        toggleButtonsEnabled(true)
-        reportText()
+        finish()
     }
 
     fun initQuestion() {

@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_init.*
 class Init : AppCompatActivity() {
     lateinit var spinner: Spinner
     lateinit var start: Button
-    var selectedCount = 10
+    var selectedCount = 5
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
