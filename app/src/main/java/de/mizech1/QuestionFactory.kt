@@ -1,5 +1,7 @@
 package de.mizech1
 
+import kotlin.math.pow
+
 class QuestionFactory() {
     companion object {
         fun setQuestionAttributes(text: String, result: Int): Question {
@@ -23,32 +25,34 @@ class QuestionFactory() {
         fun createRandomQuestion(): Question? {
             val calcType = listOf<String>("add", "subtract", "multiply", "divide")
             val random = (calcType.indices).random()
+            var difficulty = 0
+            val factor = 10.0.pow(difficulty).toInt()
 
             when (calcType.get(random)) {
                 "add" -> {
-                    val a = (0..99).random()
-                    val b = (0..99).random()
+                    val a = (0..(99 * factor)).random()
+                    val b = (0..(99 * factor)).random()
                     val sum = a + b
 
                     return setQuestionAttributes("$a + $b", sum)
                 }
                 "subtract" -> {
-                    val a = (0..99).random()
-                    val b = (0..99).random()
+                    val a = (0..(99 * factor)).random()
+                    val b = (0..(99 * factor)).random()
                     val difference = a - b
 
                     return setQuestionAttributes("$a - $b", difference)
                 }
                 "multiply" -> {
-                    val a = (1..10).random()
-                    val b = (1..10).random()
+                    val a = (1..(10 * factor)).random()
+                    val b = (1..(10 * factor)).random()
                     val product = a * b
 
                     return setQuestionAttributes("$a * $b", product)
                 }
                 else -> {
-                    var a = (0..99).random()
-                    val b = (0..49).random()
+                    var a = (0..(99 * factor)).random()
+                    val b = (0..(49 * factor)).random()
 
                     while (a % b != 0) {
                         a++

@@ -3,6 +3,7 @@ package de.mizech1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_summary_report.*
+import kotlin.math.pow
 import kotlin.math.round
 
 class SummaryReport : AppCompatActivity() {
@@ -15,14 +16,17 @@ class SummaryReport : AppCompatActivity() {
         val longTimeNeeded = intent.getLongExtra("timeNeeded", 0)
         var message = ""
 
-        when (score) {
-            10 -> {
+        val percent = (score * 100) / total
+        var rounded = (round(percent * 10.0)) / 10.0
+
+        when (rounded) {
+            in 90.0..100.0 -> {
                 message = getString(R.string.first_rank)
             }
-            in 8..9 -> {
+            in 80.0..89.9 -> {
                 message = getString(R.string.second_rank)
             }
-            in 6..7 -> {
+            in 60.0..79.9 -> {
                 message = getString(R.string.third_rank)
             }
             else -> {
@@ -33,9 +37,6 @@ class SummaryReport : AppCompatActivity() {
         timeNeeded.setText(createTimeNeeded(longTimeNeeded))
 
         congratulations.text = message
-
-        val percent = (score * 100) / total
-        var rounded = (round(percent * 10.0)) / 10.0
 
         scoreReport.setText(
             "${getString(R.string.first_part_summary)} ${score.toString()} (${rounded}%) " +
