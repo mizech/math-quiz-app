@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val selectedCount = intent.getIntExtra("selectedCount", 10)
-        questions = QuestionFactory.create(selectedCount)
+        val selectedDifficulty = intent.getIntExtra("difficulty", 0)
+        questions = QuestionFactory.create(selectedCount, selectedDifficulty)
         initQuestion()
         reportText()
         progressBar.max = questions?.size ?: 0

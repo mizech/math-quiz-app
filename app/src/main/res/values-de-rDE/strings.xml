@@ -23,4 +23,8 @@
     <string name="init_activity_title">Mathe Quiz</string>
     <string name="how_many_questions">Wie viele Fragen?</string>
     <string name="start_quiz">Starte Quiz</string>
+    <string name="difficulty_label">Schwierigkeit?</string>
+    <string name="difficulty_easy">Leicht</string>
+    <string name="difficulty_hard">Schwierig</string>
+    <string name="difficulty_very_hard">Sehr schwierig</string>
 </resources>

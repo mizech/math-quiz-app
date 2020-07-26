@@ -4,6 +4,8 @@ import kotlin.math.pow
 
 class QuestionFactory() {
     companion object {
+        val calcType = listOf<String>("add", "subtract", "multiply", "divide")
+
         fun setQuestionAttributes(text: String, result: Int): Question {
             var question = Question()
             var values
@@ -22,11 +24,9 @@ class QuestionFactory() {
             return question
         }
 
-        fun createRandomQuestion(): Question? {
-            val calcType = listOf<String>("add", "subtract", "multiply", "divide")
-            val random = (calcType.indices).random()
-            var difficulty = 0
+        fun createRandomQuestion(difficulty: Int): Question? {
             val factor = 10.0.pow(difficulty).toInt()
+            val random = (calcType.indices).random()
 
             when (calcType.get(random)) {
                 "add" -> {
@@ -64,11 +64,11 @@ class QuestionFactory() {
             }
         }
 
-        fun create(chargeSize: Int = 10): ArrayList<Question?> {
+        fun create(chargeSize: Int = 10, difficulty: Int = 0): ArrayList<Question?> {
             var randomList = ArrayList<Question?>()
             var i = 0
             while (i < chargeSize) {
-                randomList.add(createRandomQuestion())
+                randomList.add(createRandomQuestion(difficulty))
                 i++
             }
 
