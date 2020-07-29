@@ -50,8 +50,8 @@ class SummaryReport : AppCompatActivity() {
 
     fun createTimeNeeded(time: Long): String {
         val totalSeconds = time / 1000
-        val minutes = totalSeconds / 60
-        val seconds = totalSeconds % 60
+        val minutes = "0${totalSeconds / 60}".takeLast(2)
+        val seconds = "0${totalSeconds % 60}".takeLast(2)
 
         return "${resources.getString(R.string.time_needed)} $minutes:$seconds"
     }
