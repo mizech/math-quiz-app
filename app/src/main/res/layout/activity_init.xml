@@ -21,7 +21,7 @@
 
     <Spinner
         android:id="@+id/select_count_questions"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
 
     <Spinner
         android:id="@+id/select_difficulty"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
