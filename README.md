@@ -1,6 +1,6 @@
 # Grundrechenarten Quiz
 
-Fragen zu Addition, Subtraktion, Multiplikation und Division. Anzahl der Fragen und Schwierigkeitsgrad können zu Beginn festgelegt werden. Abschließend erfolgt eine Auswertung und Bewertung. 
+Quiz-Spiel mit Fragen zu Addition, Subtraktion, Multiplikation und Division. Anzahl der Fragen und Schwierigkeitsgrad können zu Beginn festgelegt werden. Abschließend erfolgt eine Auswertung und Bewertung. 
 
 <div style="display: inline;" >
   <img src="./images/screenshot0.png" alt="screenshot" width="200" />&nbsp;&nbsp;
